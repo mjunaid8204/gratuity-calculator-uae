@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect, useRef } from 'react';
 import Matter from 'matter-js';
-import { Calculator, Info, Landmark } from 'lucide-react';
+import { Calculator, Info, Landmark, Scale } from 'lucide-react';
 
 export default function Home() {
   const [salary, setSalary] = useState('');
