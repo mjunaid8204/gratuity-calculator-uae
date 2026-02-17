@@ -142,13 +142,7 @@ export default function DisclaimerPage() {
         </div>
       </section>
 
-      {/* Footer Link */}
-      <footer className="py-12 text-center border-t border-white/5">
-        <p className="text-xs text-gray-500 uppercase tracking-widest font-bold">
-          © 2026 Gratuity Calculator UAE — Legal Information Portal
-        </p>
-      </footer>
-    </div>
+          </div>
   );
 }
 
