@@ -14,7 +14,7 @@ import {
   ChevronRight
 } from 'lucide-react';
 
-// Sample Data (Real app mein ye database/Firebase se ayega)
+// Sample Data
 const blogContent = {
   "uae-labour-law-2026-changes": {
     title: "UAE Labour Law 2026: Major Changes Every Employee Should Know",
@@ -23,17 +23,9 @@ const blogContent = {
     readTime: "5 min read",
     category: "Labour Law",
     content: `
-      <p className="mb-4 text-gray-300 leading-relaxed">UAE Labour Law 2026 mein bohot baray badlaw laye gaye hain. Sabse aham tabdeeli 'Limited Contracts' ka laazmi hona hai. Purane tamam unlimited contracts ko khatam karke ab unhe naye rules ke mutabiq dhal diya gaya hai.</p>
-      
-      <h3 className="text-xl font-bold text-[#D4AF37] mt-8 mb-4">1. Transition to Limited Contracts</h3>
-      <p className="mb-4 text-gray-300 leading-relaxed">Ab har employee ka contract aik makhsoos muddat (Fixed Term) ke liye hota hai. Iska faida ye hai ke resignation ke waqt gratuity calculation ab pehle se kahin zyada asaan ho gayi hai.</p>
-
-      <h3 className="text-xl font-bold text-[#D4AF37] mt-8 mb-4">2. Unified Gratuity Calculation</h3>
-      <p className="mb-4 text-gray-300 leading-relaxed">Naye qanoon ke mutabiq, gratuity hamesha 'Basic Salary' par calculate hogi. Agar aap ne 1 saal mukammal kar liya hai, toh aap iske haqdar hain, chahay aap resign karein ya terminate kiye jayein.</p>
-      
-      <div className="bg-[#002d5a] p-6 rounded-2xl border-l-4 border-[#D4AF37] my-8">
-        <p className="italic text-gray-200">"Employee ki gratuity calculate karte waqt housing aur transport allowances ko shamil nahi kiya jata. Sirf contract mein likhi gayi Basic Salary hi asal bunyad hai."</p>
-      </div>
+      <p class="mb-4 text-gray-300 leading-relaxed">UAE Labour Law 2026 mein bohot baray badlaw laye gaye hain. Sabse aham tabdeeli 'Limited Contracts' ka laazmi hona hai. Purane tamam unlimited contracts ko khatam karke ab unhe naye rules ke mutabiq dhal diya gaya hai.</p>
+      <h3 class="text-xl font-bold text-[#D4AF37] mt-8 mb-4">1. Transition to Limited Contracts</h3>
+      <p class="mb-4 text-gray-300 leading-relaxed">Ab har employee ka contract aik makhsoos muddat (Fixed Term) ke liye hota hai. Iska faida ye hai ke resignation ke waqt gratuity calculation ab pehle se kahin zyada asaan ho gayi hai.</p>
     `
   }
 };
@@ -41,14 +33,14 @@ const blogContent = {
 export default function BlogPost() {
   const params = useParams();
   const slug = params.slug;
-  const post = blogContent[slug] || blogContent["uae-labour-law-2026-changes"]; // Fallback for demo
+  const post = blogContent[slug] || blogContent["uae-labour-law-2026-changes"];
 
   return (
-    <div className="min-h-screen bg-[#001f3f] text-white">
+    <div className="min-h-screen bg-[#001f3f] text-white font-sans">
       {/* Article Header */}
       <header className="py-16 px-6 bg-[#002d5a] border-b border-white/5">
         <div className="max-w-4xl mx-auto">
-          <Link href="/blog" className="flex items-center gap-2 text-[#D4AF37] text-xs font-bold uppercase tracking-widest mb-8 hover:-translate-x-2 transition-transform">
+          <Link href="/blog" className="flex items-center gap-2 text-[#D4AF37] text-xs font-bold uppercase tracking-widest mb-8 hover:-translate-x-2 transition-transform outline-none">
             <ArrowLeft size={16} /> Back to Blog
           </Link>
           
@@ -82,34 +74,34 @@ export default function BlogPost() {
         </div>
       </header>
 
-      {/* Article Content */}
-      <article className="max-w-4xl mx-auto py-16 px-6">
+      {/* Article Content Area */}
+      <section className="max-w-4xl mx-auto py-16 px-6">
         <div 
-          className="blog-content prose prose-invert max-w-none prose-headings:text-[#D4AF37] prose-p:text-gray-300"
+          className="prose prose-invert max-w-none prose-headings:text-[#D4AF37] prose-p:text-gray-300 mb-12"
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
 
-        {/* Tags / Footer of Article */}
-        <div className="mt-16 pt-8 border-t border-white/5 flex flex-wrap gap-2">
+        {/* Tags */}
+        <div className="pt-8 border-t border-white/5 flex flex-wrap gap-2">
           {['#UAE_Law', '#Gratuity', '#DubaiJobs', '#MOHRE'].map(tag => (
             <span key={tag} className="text-[10px] font-bold text-gray-500 border border-white/10 px-3 py-1 rounded-full">{tag}</span>
           ))}
         </div>
       </section>
 
-      {/* Related Posts Simple Section */}
+      {/* Related Articles Section */}
       <section className="bg-[#002d5a] py-16 px-6">
         <div className="max-w-4xl mx-auto">
           <h4 className="text-[#D4AF37] font-black uppercase text-xs tracking-widest mb-8">Related Articles</h4>
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="p-6 bg-[#001f3f] rounded-2xl border border-white/5">
-              <h5 className="font-bold mb-2">How to Claim Your Gratuity in Dubai?</h5>
-              <Link href="/blog/jafza-gratuity-guide" className="text-[#D4AF37] text-xs font-black flex items-center gap-1">
+            <div className="p-8 bg-[#001f3f] rounded-3xl border border-white/5 hover:border-[#D4AF37]/50 transition-all">
+              <h5 className="font-bold mb-4">How to Claim Your Gratuity in Dubai?</h5>
+              <Link href="/blog" className="text-[#D4AF37] text-xs font-black flex items-center gap-1">
                 READ ARTICLE <ChevronRight size={14} />
               </Link>
             </div>
-            <div className="p-6 bg-[#001f3f] rounded-2xl border border-white/5">
-              <h5 className="font-bold mb-2">Notice Period Rules for 2026</h5>
+            <div className="p-8 bg-[#001f3f] rounded-3xl border border-white/5 hover:border-[#D4AF37]/50 transition-all">
+              <h5 className="font-bold mb-4">Notice Period Rules for 2026</h5>
               <Link href="/blog" className="text-[#D4AF37] text-xs font-black flex items-center gap-1">
                 READ ARTICLE <ChevronRight size={14} />
               </Link>
