@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Gratuity Calculator UAE
 
-## Getting Started
+## Project Description
+Gratuity Calculator UAE is a web application designed to help users calculate their end-of-service gratuity based on UAE labor laws. It provides an easy-to-use interface for employees to input their data and receive instant calculations.
 
-First, run the development server:
+## Features
+- Simple and intuitive user interface.
+- Accurate calculations based on UAE labor laws.
+- Responsive design for mobile and desktop.
+- Ability to store and retrieve past calculations.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Installation Instructions
+1. Clone the repository: `git clone https://github.com/mjunaid8204/gratuity-calculator-uae.git`
+2. Navigate to the project directory: `cd gratuity-calculator-uae`
+3. Install the dependencies: `npm install`
+4. Start the application: `npm start`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Project Structure
+- `/src` - Contains the source code of the application.
+- `/public` - Contains static files such as images and index.html.
+- `/tests` - Contains the unit tests for the application.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Technologies Used
+- HTML, CSS, JavaScript
+- React.js for front-end development
+- Node.js for back-end development
+- Express.js as the server framework
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Usage Guide
+To use the application, follow the installation instructions to set it up locally. Once running, follow the prompts in the application to input your employment data and receive your gratuity calculation.
 
-## Learn More
+## Configuration
+You can configure the application by modifying the `config.js` file located in the `/src` directory. Here, you can customize various settings such as the API base URL and environment modes.
 
-To learn more about Next.js, take a look at the following resources:
+## SEO Information
+This project is optimized for SEO with the following guidelines:
+- Use of semantic HTML tags.
+- Optimized meta tags for better indexing.
+- An accessible sitemap.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributing Guidelines
+We welcome contributions! Please fork the repository, create a new branch, and submit a pull request describing your changes.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Bug Reports
+Please report any bugs or issues you find by creating an issue in the repository.
 
-## Deploy on Vercel
+## Important Links
+- [Official Documentation](https://github.com/mjunaid8204/gratuity-calculator-uae/blob/main/README.md)
+- [Project Repository](https://github.com/mjunaid8204/gratuity-calculator-uae)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
+This project is licensed under the MIT License.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Author Details
+**Name:** Muhammad Junaid
+**GitHub:** [mjunaid8204](https://github.com/mjunaid8204)
+
+## Deployment Instructions
+To deploy the application, you can use platforms like Heroku or Vercel. Follow their guides to easily host your application online.
+
+## Acknowledgments
+Thanks to the contributors and the open-source community for their support.
+
+---
+_Last updated on 2026-03-31 04:52:02 UTC_
